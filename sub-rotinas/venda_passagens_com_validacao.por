@@ -1,6 +1,6 @@
 programa
 {
-	inteiro total_poltronas = 2 // Variável global, apenas para facilitar os testes com menos poltronas
+	inteiro total_poltronas = 24 // Variável global, apenas para facilitar os testes com menos poltronas
 	inteiro num_min = 1 // número mínimo para as poltronas
 	inteiro num_max = total_poltronas // número máximo para as poltronas
 	
@@ -12,7 +12,7 @@ programa
 
 		escreva("Fundamentos da Programação de Computadores - Cap.6 - Vetores\n")
 		escreva("Problema 23 (Resolução com sub-rotinas)\n\n")
-		escreva("Venda de passagens\n")
+		escreva("Venda de passagens (Versão melhorada)\n")
 		
 		faca {
 			faca {
@@ -123,7 +123,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2044; 
+ * @POSICAO-CURSOR = 322; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
