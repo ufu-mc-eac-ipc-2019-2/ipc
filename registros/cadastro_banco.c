@@ -136,7 +136,7 @@ void main() {
       }
     } else if (opcao == 4) {
       // sair
-      continue;
+      break;
     } else {
       printf("Opção não reconhecida: %d\n", opcao);
     }
