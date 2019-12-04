@@ -142,10 +142,10 @@ bool excluir_conta_maior_saldo(struct Banco *banco) {
     printf("Nenhuma conta para excluir!\n");
     return false;
   }
-  // Encontrar conta com menor saldo
+  // Encontrar conta com maior saldo
   int maior = maior_saldo(*banco);
   int conta_excluida = banco->contas[maior].numero;
-  // Copiar ultima conta cadastrada p/ posição da conta com menor saldo
+  // Copiar ultima conta cadastrada p/ posição da conta com maior saldo
   copiar_contas(banco->contas[banco->contas_cadastradas-1], &banco->contas[maior]);
   printf("Conta número %d excluída com sucesso!\n", conta_excluida);
   banco->contas_cadastradas = (banco->contas_cadastradas)-1;
@@ -174,10 +174,10 @@ void main() {
       }
     } else if (opcao == 5) {
       // sair
-      continue;
+      break;
     } else {
       printf("Opção não reconhecida: %d\n", opcao);
     }
-  } while (opcao != 4);
+  } while (opcao != 5);
 
 }
